@@ -1,0 +1,56 @@
+Account:
+Required [System]: Userid, username, name,
+Required [User given]: Twitter, discord
+
+Account:
+{
+    _id: ObjectId,
+    userId: Number,
+    userName: String,
+    name: String,
+    isBlock: Boolean,
+    isDelete: Boolean,
+    createdAt: Date,
+    updatedAt: Date
+}
+
+Social Media:
+{
+    _id: ObjectId,
+    twitter: String,
+    discord: String,
+    cmc: String,
+    linkedin: String
+    createdAt: Date,
+    updatedAt: Date
+}
+
+Point System:
+{
+    _id: ObjectId,
+    userId: AccountID(ObjectId),
+    points: Number,
+    createdAt: Date,
+    updatedAt: Date
+}
+
+Task Inffo:
+{
+    _id: ObjectId,
+    title: String,
+    point: Number,
+    caterogy: String,
+    startedAt: Timestamp,
+    endedAt: Timestamp,
+    createdAt; Date,
+    updatedAt: Date
+}
+
+Task Completed User List:
+{
+    _id: ObjectId,
+    userId: Object,
+    completedTaskId: ObjectId,
+    createdAt: Date,
+    updatedAt: Date
+}
