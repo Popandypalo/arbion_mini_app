@@ -1,0 +1,131 @@
+/* Фоновый контейнер */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000; /* Устанавливаем черный фон */
+    overflow: hidden;
+}
+.background-video {
+    position: absolute;
+    top: 4.868720379146919vh;
+    left: 0;
+    padding-bottom: 56.25%;
+    width: 100vw;
+    min-height: 20.4vh;
+    z-index: -100; /* Видео будет на самом заднем плане */
+    background-color: transparent;
+    object-fit: cover; 
+    object-position: center center; 
+    background-color: transparent;
+}
+/* Основной контейнер */
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 0;
+}
+
+/* Градиент */
+.gradient {
+    position: absolute;
+    width: 100%;  /* 430px от ширины экрана */
+    height: 100%;  /* 932px от высоты экрана */
+    left: -18.6%;  /* Для того чтобы сдвинуть влево */
+    top: -19%;  /* Для того чтобы сдвинуть вверх */
+    opacity: 0.05;
+    filter: blur(150px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+}
+
+/* Эллипс 25 */
+/* Эллипс 25 */
+/* Эллипс 25 (основной засвет) */
+/* Эллипс 25 (основной засвет) */
+.ellipse-25 {
+    position: absolute;
+    width: 67.8%;  /* (412 / 609) * 100 */
+    height: 60.2%; /* (560 / 1141) * 100 */
+    left: -10%;  /* Относительно родителя, 0% от ширины экрана */
+    top: 15%;  /* 6% от высоты экрана */
+    background-color: #D8D8D8;
+    border-radius: 50%;
+    opacity: 0.05;
+    filter: blur(100px);
+}
+
+/* Эллипс 26 (основной засвет) */
+.ellipse-26 {
+    position: absolute;
+    width: 67.8%; /* (412 / 609) * 100 */
+    height: 60.2%; /* (560 / 1141) * 100 */
+    left: 60.2%; /* 117px от 430px */
+    top: 5%; /* Начинаем с верхней части экрана */
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    opacity: 0.04;
+    filter: blur(100px);
+}
+
+/* Перевернутый Эллипс 25 (засвет) */
+.ellipse-25-reversed {
+    position: absolute;
+    width: 67.8%;  /* (412 / 609) * 100 */
+    height: 60.2%;  /* (560 / 1141) * 100 */
+    left: 0%;  /* Относительно родителя, 0% от ширины экрана */
+    top: 50%;  /* Располагаем его в нижней части экрана, около 90% */
+    background-color: #D8D8D8;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    border-radius: 50%;
+    opacity: 0.02;
+    filter: blur(100px);
+}
+
+/* Перевернутый Эллипс 26 (засвет) */
+.ellipse-26-reversed {
+    position: absolute;
+    width: 67.8%;  /* (412 / 609) * 100 */
+    height: 60.2%; /* (560 / 1141) * 100 */
+    left: 27.2%; /* 117px от 430px */
+    top: 60%; /* Располагаем его в нижней части экрана, около 97% */
+    background-color: #F5F5F5;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    border-radius: 50%;
+    opacity: 0.03;
+    filter: blur(100px);
+}
+
+
+
+/* Засветы */
+.light {
+    position: absolute;
+    width: 66.6%; /* 286px от 430px */
+    height: 22.3%;  /* 207.33px от 932px */
+    background: #F5F5F5;
+    opacity: 0.06;
+    filter: blur(57.8479px);
+}
+
+/* Первое освещение */
+.light-1 {
+    left: calc(50% - 33.3%);  /* Центрируем по горизонтали */
+    top: 11.4%;  /* 106px от 932px */
+}
+
+/* Второе освещение */
+.light-2 {
+    left: calc(50% - 33.3% + 52.5%); /* Сдвигаем вправо */
+    top: 65% ; /* 606px от 932px */
+}
+
+/* Третье освещение */
+.light-3 {
+    left: calc(50% - 33.3% - 51.4%); /* Сдвигаем влево */
+    top: 44% ;  /* 414px от 932px */
+}
+
+

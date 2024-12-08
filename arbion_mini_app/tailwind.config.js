@@ -9,7 +9,8 @@ export default {
     extend: {},
     fontFamily: {
       'poppins': 'Poppins, sans-serif',
-      'sf-pro-display-black': 'sf-pro-display-black, sans-serif'
+      'sf-pro-display-black': 'sf-pro-display-black, sans-serif',
+      'sf-pro-display-regular': 'sf-pro-display-regular, sans-serif'
     }
   },
   daisyui: {
