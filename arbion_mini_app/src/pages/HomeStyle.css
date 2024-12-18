@@ -49,106 +49,106 @@
 }
 
 /* Засвет 1 */
+/* Засвет 1 */
 .custom-block .light-1 {
-    width: 72px;
-    height: 72px;
-    left: 0; /* Расположим относительно контейнера */
-    top: 17px;
+    width: 18.46vw; /* 72px от ширины 390px */
+    height: 8.53vh; /* 72px от высоты 844px */
+    left: 0; 
+    top: 2.01vh; /* 17px от высоты 844px */
     opacity: 0.5;
-    transform: translateX(-20px); /* Сдвигаем влево, выходя за пределы */
+    transform: translateX(-5.12vw); /* 20px от ширины 390px */
 }
 
 /* Засвет 2 */
 .custom-block .light-2 {
-    width: 72px;
-    height: 72px;
-    left: 100%; /* Правый край контейнера */
-    top: -19px;
+    width: 18.46vw; 
+    height: 8.53vh; 
+    left: 100%; 
+    top: -2.25vh; /* -19px от высоты 844px */
     opacity: 0.5;
-    transform: translateX(-100%); /* Сдвигаем вправо */
+    transform: translateX(-100%);
 }
 
 /* Засвет 3 */
 .custom-block .light-3 {
-    width: 72px;
-    height: 28px;
-    left: 139px; /* Позиция внутри блока */
-    top: 17px;
+    width: 18.46vw; 
+    height: 3.31vh; /* 28px от высоты 844px */
+    left: 35.64vw; /* 139px от ширины 390px */
+    top: 2.01vh; 
     opacity: 0.9;
-    transform: translateX(10px); /* Сдвигаем по горизонтали */
+    transform: translateX(2.56vw); /* 10px от ширины 390px */
 }
 
 .circle {
-    width: 29px;
-    height: 29px;
+    width: 7.43vw; /* 29px от ширины 390px */
+    height: 7.43vw; 
     border-radius: 50%;
     background: linear-gradient(to bottom, #525252 0%, #3B3B3B 30%); 
     font-family: 'sf-pro-display-regular', sans-serif;
-    font-size: 18.98px;
-    line-height: 1; 
+    font-size: 4.86vw; /* 18.98px от ширины 390px */
+    line-height: 7.43vw; /* Устанавливаем line-height = высота */
     text-align: center; 
+    display: grid;
+    place-items: center; /* Центрирует по горизонтали и вертикали */
     box-sizing: border-box; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 7px;
-    flex-shrink: 0; /* Фиксирует размер круга */
-    transform: translateY(-1px); /* Поднимаем круг на 3px вверх */
+    margin-right: 1.79vw; /* 7px от ширины 390px */
+    flex-shrink: 0; 
 }
 
 .nickname {
     font-family: 'sf-pro-display-regular', sans-serif;
-    font-size: 24px;
+    font-size: 6.15vw; /* 24px от ширины 390px */
     color: white;
-    text-shadow: 0px 0px 9px white; 
-    white-space: nowrap; /* Запрещает перенос текста */
-    overflow: hidden; /* Обрезает текст, который не помещается */
-    text-overflow: ellipsis; /* Добавляет троеточие */
-    max-width: 135px; /* Устанавливаем ширину для 10 символов */
-    min-width: 135px;
-    flex-shrink: 0; /* Запрещаем уменьшать размер */
-    margin-right: 56px;
+    text-shadow: 0px 0px 1.07vw white; /* 9px от ширины 390px */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    max-width: 34.62vw; /* 135px от ширины 390px */
+    min-width: 34.62vw; 
+    flex-shrink: 0; 
+    margin-right: 14.36vw; /* 56px от ширины 390px */
 }
 
 .number {
     font-family: 'sf-pro-display-regular', sans-serif;
-    font-size: 24px;
+    font-size: 6.15vw; /* 24px от ширины 390px */
     color: white;
-    white-space: nowrap; /* Запрещает перенос текста */
-    overflow: hidden; /* Обрезает текст, который не помещается */
-    max-width: 95px; /* Гарантируем, что текст не растянет вёрстку */
+    white-space: nowrap; 
+    overflow: hidden; 
+    max-width: 24.36vw; /* 95px от ширины 390px */
 }
 
-
-/* Placeholder square while loading */
+/* Placeholder circle while loading */
 .circle-placeholder {
-    width: 29px;  /* Same size as circle */
-    height: 29px; /* Same size as circle */
+    width: 7.43vw; 
+    height: 7.43vw; 
     background: linear-gradient(to bottom, #525252 0%, #3B3B3B 30%); 
-    background-size: 200% 200%; /* Increase size for smooth transition */
+    background-size: 200% 200%; 
     border-radius: 50%;
-    margin-right: 7px; /* Matches the margin of the circle */
-    transform: translateY(-1px); /* Matches the circle's vertical position */
+    margin-right: 1.79vw; 
+    transform: translateY(-0.35vh); 
 }
 
 .nickname-placeholder {
-    width: 135px; /* Same size as nickname element */
-    height: 24px; /* Same height as nickname */
+    width: 34.62vw; 
+    height: 2.84vh; /* 24px от высоты 844px */
     background: linear-gradient(to bottom, #525252 0%, #3B3B3B 60%); 
-    background-size: 200% 200%; /* Increase size for smooth transition */
-    border-radius: 10px; /* Rounded corners to match nickname */
-    margin-right: 56px; /* Matches the margin-right of the nickname */
-    animation: pulse 0.8s infinite linear; /* Animation for pulse effect */
+    background-size: 200% 200%; 
+    border-radius: 1.18vw; /* 10px от ширины 390px */
+    margin-right: 14.36vw; 
+    animation: pulse 0.8s infinite linear; 
 }
 
 .number-placeholder {
-    width: 95px;  /* Same size as the number element */
-    height: 24px; /* Same height as the number */
+    width: 24.36vw; 
+    height: 2.84vh; 
     background: linear-gradient(to bottom, #525252 0%, #3B3B3B 60%); 
-    background-size: 200% 200%; /* Increase size for smooth transition */
-    border-radius: 5px;
-    animation: pulse 0.8s infinite linear; /* Animation for pulse effect */
+    background-size: 200% 200%; 
+    border-radius: 1.28vw; /* 5px от ширины 390px */
+    animation: pulse 0.8s infinite linear; 
 }
+
+
 
 /* Pulse animation */
 @keyframes pulse {
@@ -160,5 +160,329 @@
     }
     100% {
         background-position: 0% 0%;
+    }
+}
+
+
+.condition {
+    display: flex;
+    flex-direction: column;
+}
+
+.condition-left,
+.condition-right {
+    display: flex; /* Используем Flexbox */
+    justify-content: space-between; /* Расставляем блоки по краям */
+    gap: 5.128205128205128vw; /* Добавляем отступ между блоками */
+}
+
+
+.condition-left {
+    align-items: center;
+}
+
+.condition-title {
+    font-size: 4.615vw;
+    color: #939399; /* Устанавливаем цвет */
+    font-family: Poppins, sans-serif;
+    position: relative;
+    top: -0.3554502369668246vh; /* Поднимаем на 4px выше */
+    left: 1.564102564102564vw; /* Сдвигаем на 2px правее от края */
+}
+
+
+.circle-large {
+    width: 8.92307692307692vw;
+    height: 9.392307692307692vw;
+    border-radius: 50%; /* Сделано круглым */
+    background-image: url('../assets/images/logo.png'); /* Путь к картинке */
+    background-size: cover; /* Масштабирует картинку, сохраняя пропорции */
+    background-position: center; /* Центрирует картинку */
+    background-repeat: no-repeat; /* Картинка не будет повторяться */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent; /* Убираем текст, если картинка есть */
+}
+
+.condition-content {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по центру */
+    gap: 0; /* Убираем отступы между элементами */
+}
+
+.balance {
+    font-size: 6.1538vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: medium;
+    margin: 0; /* Убираем все отступы */
+    min-width: 38.20512820512821vw; /* Минимальная ширина */
+    max-width: 38.49512820512821vw; /* Максимальная ширина 100% родителя */
+    overflow: hidden; /* Скрытие лишнего контента */
+    text-overflow: ellipsis; /* Добавление троеточия, если текст не помещается */
+    white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+}
+
+.circle-small {
+    width: 5.128205128205128vw;
+    height: 5.128205128205128vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: -1.1vh;  /* Поднимаем на 3 пикселя вверх */
+    
+}
+
+.circle-small svg {
+    width: 100%;  /* Заставляем SVG занимать всю ширину контейнера */
+    height: 100%; /* Заставляем SVG занимать всю высоту контейнера */
+}
+.claim-button {
+    background-color: transparent;  /* Делаем фон кнопки прозрачным */
+    border: 0.5px solid #4D4B4B;  /* Белая обводка толщиной 0.5 пикселя с цветом #C1C1C1 */
+    padding: 0;  /* Убираем отступы, чтобы задать точные размеры */
+    color: #4D4B4B;  /* Цвет текста #C1C1C1 */
+    font-size: 2.307692307692308vw;  /* Размер шрифта 9px */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;  /* Medium */
+    border-radius: 7px;  /* Радиус скругления */
+    width: 10.51282051282051vw;  /* Ширина кнопки 41px */
+    height: 2.962085308056872vh;  /* Высота кнопки 25px */
+    display: flex;
+    justify-content: center;  /* Центрируем по горизонтали */
+    align-items: center;  /* Центрируем по вертикали */
+    text-transform: uppercase;  /* Все буквы в верхнем регистре */
+    position: relative;  /* Для смещения кнопки */
+    margin-top: -1.0739336492890995vh;  /* Смещаем кнопку вверх на 3px */
+}
+
+
+.circle-icon {
+    width: 6.153846153846154vw;
+    height: 6.153846153846154vw;
+    border-radius: 50%;
+    background-color: transparent;  /* Прозрачный фон */
+    border: 0.5px solid #C1C1C1;  /* Белая обводка */
+    color: #C1C1C1;  /* Цвет текста */
+    display: flex;
+    justify-content: center;  /* Центрируем по горизонтали */
+    align-items: center;  /* Центрируем по вертикали */
+    font-size: 2.564102564102564vw;  /* Уменьшение размера шрифта */
+    margin-left: 2.051282051282051vw;
+    margin-bottom: 1.184834123222749vh;
+    text-align: center;  /* Центрируем текст */
+}
+
+
+.deposit, .payout {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем элементы внутри каждого блока */
+    justify-content: center;
+    margin-top: 0.8293838862559242vh; /* Отступ сверху */
+}
+
+.deposit-text, .payout-text {
+    font-family: 'sf-pro-display-regular', sans-serif;
+    font-size: 3.58974358974359vw;
+    text-align: center;
+    margin-top: 0.7109004739336493vh; /* Добавляем небольшой отступ снизу */
+}
+
+.condition-content {
+    display: flex; /* Используем flexbox для горизонтального расположения элементов */
+    flex-direction: row; /* Горизонтальное выравнивание элементов */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.condition-content2 {
+    display: flex; /* Используем flexbox для горизонтального расположения элементов */
+    flex-direction: row; /* Горизонтальное выравнивание элементов */
+    align-items: center; /* Центрируем элементы по вертикали */
+    margin-left: 1.282051282051282vw; /* Сдвигаем на 4px вправо */
+    margin-top: 0.405848341232227vh;
+}
+
+
+.condition-container {
+    display: flex; /* Используем flexbox для горизонтального расположения блоков */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+}
+
+.exp-text {
+    font-size: 4.102564102564103vw;
+    font-family: Poppins, sans-serif;
+    margin-bottom: 0.9478672985781991vh;
+    min-width: 21.94871794871795vw;
+    margin-left: 0.7692307692307692vw;  /* Сдвигаем элемент на 3 пикселя вправо */
+}
+.condition {
+    display: flex;
+    flex-direction: column; /* Сохраняем вертикальное расположение элементов внутри condition */
+}
+
+.condition-container {
+    display: flex; /* Используем flexbox для горизонтального расположения блоков */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+    width: 90.3333333vw; /* Устанавливаем фиксированную ширину */
+    height: 9.241706vh; /* Устанавливаем фиксированную высоту */
+    margin: 4.5vh auto; /* Центрируем контейнер на странице */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    gap: 10.25641025641026vw;
+}
+.deposit-icon {
+    /* Дефолтный размер для Deposit */
+    width: 12.53846153846154vw;
+    height: 12.53846153846154vw;
+}
+
+.payout-icon {
+    /* Дефолтный размер для Payout */
+    width: 12.53846153846154vw;
+    height: 12.53846153846154vw;
+}
+
+.deposit-icon svg,
+.payout-icon svg {
+    width: 100%;  /* Заставляем SVG занимать всю ширину контейнера */
+    height: 100%; /* Заставляем SVG занимать всю высоту контейнера */
+}
+
+.balance-placeholder {
+    width: 38.49512820512821vw; 
+    height: 2.391469194312796vh; 
+    background: linear-gradient(to bottom, #525252 0%, #3B3B3B 60%); 
+    background-size: 200% 200%; 
+    border-radius: 1.18vw; /* You can adjust this value based on your design */
+    animation: pulse 0.8s infinite linear; 
+}
+
+.exp-placeholder {
+    width: 60px; 
+    height: 19px; 
+    background: linear-gradient(to bottom, #525252 0%, #3B3B3B 60%); 
+    background-size: 200% 200%; 
+    border-radius: 1.28vw; /* 5px from 390px width */
+    animation: pulse 0.8s infinite linear; 
+}
+
+.exp-container-place{
+    margin-bottom: 0.9478672985781991vh;
+    min-width: 21.94871794871795vw;
+    margin-left: 0.7692307692307692vw; 
+}
+
+.graph-cont{
+    display: flex;           /* Enable flexbox layout */
+    justify-content: center; /* Center child horizontally */
+    align-items: center;     /* Center child vertically */
+    position: relative;
+}
+.graph-cont::before{
+    content: '';                  /* Necessary for pseudo-element to be displayed */
+    position: absolute;           /* Absolute positioning relative to .graph-cont */
+    width: 100%;                 /* Width of the blurred background */
+    height: 100%;                /* Height of the blurred background */
+    background: #F5F5F5;          /* Background color */
+    opacity: 0.15;                /* Opacity of the blur effect */
+    filter: blur(62.5px);         /* Blur effect */
+    z-index: -1;                  /* Send the pseudo-element behind the content */
+    border-radius: 50%;  
+}
+.grid{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none; /* Отключаем все события указателя */
+}
+.grid svg{
+    width: 100%;
+    height: 100%;
+    margin-top: -36.72985781990521vh;
+}
+.grid .clickable-element {
+    pointer-events: auto; /* Включаем обработку событий для элементов внутри grid */
+}
+
+.header h1 {
+    font-size: 15px;
+    color: #939393;
+    margin-bottom: 6px;
+    font-family: 'Poppins', sans-serif;
+    transform: translateX(30px) translateY(45px); /* Сдвиг влево и вниз */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    gap: 18px; /* Пространство между строками */
+    transform: translateX(-10px) translateY(52px); /* Сдвиг влево и вниз */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    flex: 1;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin-left: -30px;
+    margin-right: 80px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column; /* Это сделает элементы внутри вертикальными */
+    align-items: flex-end; /* Сдвиг текста в правую часть */
+    padding-right: 25px;
+}
+
+/* Убедитесь, что иконки будут отображаться корректно */
+.icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.grid-layer{
+    width: 100vw;
+    height: 163px;
+    margin: auto;
+    
+}
+
+.asdas{
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center;     /* Центрирует по вертикали */
+}
+
+.price-placeholder {
+    width: 100px;
+    height: 20px;
+    background: linear-gradient(90deg, #141414 -38.38%, #6C6C6C -34.96%, #181818 101.83%);
+    border-radius: 44px;
+    background-size: 200% 200%; 
+    animation: pulse 1.5s infinite linear; 
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: 200px 0;
     }
 }

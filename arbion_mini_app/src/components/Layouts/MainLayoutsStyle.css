@@ -9,14 +9,16 @@ body, html {
 }
 .background-video {
     position: absolute;
-    top: 4.868720379146919vh;
+    top: 3.368720379146919vh;
     left: 0;
-    padding-bottom: 56.25%;
     width: 100vw;
-    min-height: 20.4vh;
+    max-width: 100%;
+    height:auto;
+    min-height: 20.5vh;
     z-index: -100; /* Видео будет на самом заднем плане */
     background-color: transparent;
-    object-fit: cover; 
+    object-fit: fill; 
+    padding : 56.25% 100; /* 100%/16*9 = 56.25% = Aspect ratio 16:9 */
     object-position: center center; 
     background-color: transparent;
 }
@@ -106,7 +108,7 @@ body, html {
     width: 66.6%; /* 286px от 430px */
     height: 22.3%;  /* 207.33px от 932px */
     background: #F5F5F5;
-    opacity: 0.06;
+    opacity: 0.03;
     filter: blur(57.8479px);
 }
 
@@ -124,8 +126,8 @@ body, html {
 
 /* Третье освещение */
 .light-3 {
-    left: calc(50% - 33.3% - 51.4%); /* Сдвигаем влево */
-    top: 44% ;  /* 414px от 932px */
+    left: calc(30% - 33.3% - 51.4%); /* Сдвигаем влево */
+    top: 55% ;  /* 414px от 932px */
 }
 
 

@@ -1,0 +1,90 @@
+.graph-container {
+    background-color: transparent;
+    width: 86vw;               /* Width of the container */
+    height: 26.5vh;              /* Height of the container */
+    display: flex;             /* Use flexbox layout */
+    justify-content: center;   /* Center the graph horizontally */
+    align-items: flex-start;   /* Align to the top vertically */
+    position: relative;   
+    margin-top: 0.383886255924171vh;
+  }
+  
+  .graph {
+    width: 100%;               /* Ensure graph takes the full width of the container */
+    height: 100%;              /* Ensure graph takes the full height of the container */
+    position: absolute;        /* Position the graph absolutely */
+  }
+  .custom-tooltip {
+    pointer-events: none;
+    z-index: 10;
+  }
+  
+  svg text {
+    font-family: 'Arial', sans-serif;
+  }
+  .tooltip-point {
+    animation: fadeIn 0.2s ease forwards;
+  }
+  
+  .tooltip-svg {
+    animation: fadeIn 0.2s ease forwards;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeIn 0.2s ease forwards;
+  }
+  
+  .fade-out {
+    opacity: 1;
+    transform: scale(1);
+    animation: fadeOut 0.2s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
+  .loading-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Light gray border */
+    border-top: 4px solid #fff; /* White top border */
+    border-radius: 50%; /* Make it circular */
+    width: 40px; /* Spinner width */
+    height: 40px; /* Spinner height */
+    animation: spin 1s linear infinite; /* Infinite spin animation */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Start rotation at 0 degrees */
+    }
+    100% {
+      transform: rotate(360deg); /* Complete a full rotation */
+    }
+  }
